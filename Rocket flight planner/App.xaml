@@ -1,9 +1,9 @@
 ﻿<Application x:Class="Rocket_flight_planner.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Rocket_flight_planner"
-             StartupUri="MainWindow.xaml">
+             StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-         
+        <!--<local:LocalizedStrings xmlns:local ="clr-namespace:Rocket_flight_planner"
+                           x:Key="LocalizedStrings" />-->
     </Application.Resources>
 </Application>
