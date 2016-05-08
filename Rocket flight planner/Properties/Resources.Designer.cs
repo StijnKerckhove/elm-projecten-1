@@ -77,5 +77,14 @@ namespace Rocket_flight_planner.Properties {
                 return ResourceManager.GetString("MainwindowTitle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rocket specifications.
+        /// </summary>
+        public static string RocketSpecs {
+            get {
+                return ResourceManager.GetString("RocketSpecs", resourceCulture);
+            }
+        }
     }
 }

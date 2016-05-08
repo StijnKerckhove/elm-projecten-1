@@ -3,7 +3,5 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-        <!--<local:LocalizedStrings xmlns:local ="clr-namespace:Rocket_flight_planner"
-                           x:Key="LocalizedStrings" />-->
     </Application.Resources>
 </Application>

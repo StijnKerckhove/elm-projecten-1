@@ -124,4 +124,8 @@
     <value>Rocket flight planner</value>
     <comment>Title of the main window</comment>
   </data>
+  <data name="RocketSpecs" xml:space="preserve">
+    <value>Rocket specifications</value>
+    <comment>Label RocketSpecs</comment>
+  </data>
 </root>

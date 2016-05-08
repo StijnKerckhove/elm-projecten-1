@@ -1,9 +1,9 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Threading;
-using System.Windows;
+using Rocket_flight_planner.Models;
+using Rocket_flight_planner.Services;
 
-namespace Rocket_flight_planner
+namespace Rocket_flight_planner.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -14,8 +14,10 @@ namespace Rocket_flight_planner
         {
             // Overwrite system locale
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
-
             InitializeComponent();
+
+            var rocketFlightService = new RocketFlightService();
+            DataContext = rocketFlightService.LaunchPad;
         }
     }
 }
