@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Threading;
 using Rocket_flight_planner.Models;
-using Rocket_flight_planner.Services;
+using Rocket_flight_planner.ViewModels;
 
 namespace Rocket_flight_planner.Views
 {
@@ -16,8 +16,9 @@ namespace Rocket_flight_planner.Views
             Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
             InitializeComponent();
 
-            var rocketFlightService = new RocketFlightService();
-            DataContext = rocketFlightService.LaunchPad;
+            var viewModel = new LaunchPadViewModel {LaunchPadModel = new LaunchPad {LaunchTubeDiameter = 20}};
+
+            DataContext = viewModel;
         }
     }
 }

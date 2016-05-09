@@ -20,6 +20,7 @@
         </Grid.ColumnDefinitions>
         <Label x:Name="Label" Content="{x:Static p:Resources.Language}" HorizontalAlignment="Right" Margin="0,60,10,0" VerticalAlignment="Top" Grid.Column="1"/>
         <TextBlock Grid.Column="0" x:Name="TextBlock" HorizontalAlignment="Left" Margin="20,15,0,0" TextWrapping="Wrap" Text="{Binding Converter={StaticResource Converter}, Source={x:Static p:Resources.MainwindowTitle}}" VerticalAlignment="Top" FontSize="36" Grid.ColumnSpan="2" Width="458" Foreground="#FFF2FFFE"/>
-        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="150,139,0,0" TextWrapping="Wrap" Text="{Binding Path=LaunchHeight}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="150,139,0,0" TextWrapping="Wrap" Text="{Binding Path=LaunchPadModel.Rocket.Mass, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Button" Command="{Binding Path=Test}" Grid.Column="1" HorizontalAlignment="Left" Margin="289,388,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>

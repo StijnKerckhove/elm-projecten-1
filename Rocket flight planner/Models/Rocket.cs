@@ -1,7 +1,15 @@
-﻿namespace Rocket_flight_planner.Models
+﻿using Rocket_flight_planner.Interfaces;
+
+namespace Rocket_flight_planner.Models
 {
-    public class Rocket
+    public class Rocket : ObservableObject
     {
-        public double Mass { get; set; }
+        private double _mass;
+
+        public double Mass
+        {
+            get { return _mass; }
+            set { _mass = value; OnPropertyChanged("Mass"); }
+        }
     }
 }

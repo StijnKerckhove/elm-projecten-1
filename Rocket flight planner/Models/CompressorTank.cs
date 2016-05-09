@@ -1,7 +1,15 @@
-﻿namespace Rocket_flight_planner.Models
+﻿using Rocket_flight_planner.Interfaces;
+
+namespace Rocket_flight_planner.Models
 {
-    public class CompressorTank
+    public class CompressorTank : ObservableObject
     {
-        public int LaunchPressure { get; set; }
+        private int _launchPressure;
+
+        public int LaunchPressure
+        {
+            get { return _launchPressure; }
+            set { _launchPressure = value; OnPropertyChanged("LaunchPressure"); }
+        }
     }
 }

@@ -45,10 +45,6 @@
     <ApplicationIcon>Images\Logo-groep_5.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FirstFloor.ModernUI, Version=1.0.9.0, Culture=neutral, PublicKeyToken=bc9b0c37bf06c6a9, processorArchitecture=MSIL">
-      <HintPath>..\packages\ModernUI.WPF.1.0.9\lib\net45\FirstFloor.ModernUI.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -71,6 +67,8 @@
     </ApplicationDefinition>
     <Compile Include="Controller\RocketController.cs" />
     <Compile Include="Converters\CaseConverter.cs" />
+    <Compile Include="Interfaces\ObservableObject.cs" />
+    <Compile Include="Interfaces\RelayCommand.cs" />
     <Compile Include="Models\CompressorTank.cs" />
     <Compile Include="Models\LaunchPad.cs" />
     <Compile Include="Properties\Annotations.cs" />
@@ -80,6 +78,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Models\Rocket.cs" />
+    <Compile Include="ViewModels\LaunchPadViewModel.cs" />
     <Compile Include="ViewModels\RocketViewModel.cs" />
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

@@ -1,27 +1,65 @@
-﻿namespace Rocket_flight_planner.Models
+﻿using Rocket_flight_planner.Interfaces;
+
+namespace Rocket_flight_planner.Models
 {
 
-    public class LaunchPad
+    public class LaunchPad : ObservableObject
     {
+        private int _launchTubeDiameter;
+        private int _launchAngle;
+        private int _launchHeight;
+
+        private Rocket _rocket;
+        private RocketFlight _rocketFlight;
+        private CompressorTank _compressorTank;
+
         public LaunchPad()
         {
-            CompressorTank = new CompressorTank();
-            Rocket = new Rocket();
-            RocketFlight = new RocketFlight(Rocket);
+            _compressorTank = new CompressorTank {LaunchPressure = 6};
+            _rocket = new Rocket { Mass = 100 };
+            _rocketFlight = new RocketFlight(_rocket);
         }
 
-        public Rocket Rocket { get; set; }
+        public int LaunchTubeDiameter
+        {
+            get { return _launchTubeDiameter; }
+            set { _launchTubeDiameter = value; OnPropertyChanged("LaunchTubeDiameter"); }
+        }
 
-        public CompressorTank CompressorTank { get; set; }
+        public int LaunchTubeLength
+        {
+            get { return _launchAngle; }
+            set { _launchAngle = value; OnPropertyChanged("LaunchTubeLength"); }
+        }
 
-        public int LaunchTubeDiameter { get; set; }
+        public int LaunchAngle
+        {
+            get { return _launchAngle; }
+            set { _launchAngle = value; OnPropertyChanged("LaunchAngle"); }
+        }
 
-        public int LaunchTubeLength { get; set; }
+        public int LaunchHeight
+        {
+            get { return _launchHeight; }
+            set { _launchHeight = value; OnPropertyChanged("LaunchHeight"); }
+        }
 
-        public int LaunchAngle { get; set; }
+        public Rocket Rocket
+        {
+            get { return _rocket; }
+            set { _rocket = value; OnPropertyChanged("Rocket"); }
+        }
 
-        public int LaunchHeight { get; set; }
+        public RocketFlight RocketFlight
+        {
+            get { return _rocketFlight; }
+            set { _rocketFlight = value; OnPropertyChanged("RocketFlight"); }
+        }
 
-        public RocketFlight RocketFlight { get; set; }
+        public CompressorTank CompressorTank
+        {
+            get { return _compressorTank; }
+            set { _compressorTank = value; OnPropertyChanged("CompressorTank"); }
+        }
     }
 }
