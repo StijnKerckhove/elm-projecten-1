@@ -1,5 +1,7 @@
-﻿using System.Globalization;
+﻿using System.Collections;
+using System.Globalization;
 using System.Threading;
+using System.Windows.Documents;
 using Rocket_flight_planner.Models;
 using Rocket_flight_planner.ViewModels;
 

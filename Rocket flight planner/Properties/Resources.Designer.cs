@@ -8,10 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Rocket_flight_planner.Properties {
+namespace Rocket_flight_planner.Properties
+{
     using System;
-    
-    
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,67 +23,213 @@ namespace Rocket_flight_planner.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Resources {
-        
+    public class Resources
+    {
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Resources()
+        {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.ReferenceEquals(resourceMan, null)) {
+        public static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.ReferenceEquals(resourceMan, null))
+                {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Rocket_flight_planner.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static global::System.Globalization.CultureInfo Culture {
-            get {
+        public static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized string similar to Calculate.
+        /// </summary>
+        public static string Calculate
+        {
+            get
+            {
+                return ResourceManager.GetString("Calculate", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to cm.
+        /// </summary>
+        public static string Centimeter
+        {
+            get
+            {
+                return ResourceManager.GetString("Centimeter", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        public static string CompressorSpecs
+        {
+            get
+            {
+                return ResourceManager.GetString("CompressorSpecs", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        public static string Distance
+        {
+            get
+            {
+                return ResourceManager.GetString("Distance", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to gram.
+        /// </summary>
+        public static string Gram
+        {
+            get
+            {
+                return ResourceManager.GetString("Gram", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
-        public static string Language {
-            get {
+        public static string Language
+        {
+            get
+            {
                 return ResourceManager.GetString("Language", resourceCulture);
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized string similar to Launch angle:.
+        /// </summary>
+        public static string LaunchAngle
+        {
+            get
+            {
+                return ResourceManager.GetString("LaunchAngle", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Launch height:.
+        /// </summary>
+        public static string LaunchHeight
+        {
+            get
+            {
+                return ResourceManager.GetString("LaunchHeight", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Launch pad.
+        /// </summary>
+        public static string LaunchPadSpecs
+        {
+            get
+            {
+                return ResourceManager.GetString("LaunchPadSpecs", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Launch tube diameter:.
+        /// </summary>
+        public static string LaunchTubeDiameter
+        {
+            get
+            {
+                return ResourceManager.GetString("LaunchTubeDiameter", resourceCulture);
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to Rocket flight planner.
         /// </summary>
-        public static string MainwindowTitle {
-            get {
+        public static string MainwindowTitle
+        {
+            get
+            {
                 return ResourceManager.GetString("MainwindowTitle", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to Rocket specifications.
+        ///   Looks up a localized string similar to Mass:.
         /// </summary>
-        public static string RocketSpecs {
-            get {
+        public static string Mass
+        {
+            get
+            {
+                return ResourceManager.GetString("Mass", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to m.
+        /// </summary>
+        public static string Meters
+        {
+            get
+            {
+                return ResourceManager.GetString("Meters", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Preferred distance:.
+        /// </summary>
+        public static string PreferredDistance
+        {
+            get
+            {
+                return ResourceManager.GetString("PreferredDistance", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Rocket.
+        /// </summary>
+        public static string RocketSpecs
+        {
+            get
+            {
                 return ResourceManager.GetString("RocketSpecs", resourceCulture);
             }
         }

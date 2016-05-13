@@ -17,7 +17,8 @@ namespace Rocket_flight_planner.Models
         {
             _compressorTank = new CompressorTank {LaunchPressure = 6};
             _rocket = new Rocket { Mass = 100 };
-            _rocketFlight = new RocketFlight(_rocket);
+            _rocketFlight = new RocketFlight { Rocket = _rocket, PreferredDistance = 8};
+            _launchHeight = 20;
         }
 
         public int LaunchTubeDiameter

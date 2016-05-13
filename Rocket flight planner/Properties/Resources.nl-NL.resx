@@ -117,12 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CompressorSpecs" xml:space="preserve">
+    <value>CompressorSpecs</value>
+    <comment>tbCompressorSpecs</comment>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>Nederlands</value>
+  </data>
+  <data name="LaunchPadSpecs" xml:space="preserve">
+    <value>Launch pad specifications</value>
+    <comment>tbLaunchPadSpecs</comment>
   </data>
   <data name="MainwindowTitle" xml:space="preserve">
     <value>Rocket flight planner</value>
     <comment>Title of the main window</comment>
+  </data>
+  <data name="Mass" xml:space="preserve">
+    <value>Massa</value>
+    <comment>lblMass</comment>
   </data>
   <data name="RocketSpecs" xml:space="preserve">
     <value>Raket specificaties</value>

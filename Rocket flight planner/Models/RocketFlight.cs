@@ -7,12 +7,17 @@ namespace Rocket_flight_planner.Models
         private double _acceleration;
         private double _liftOffTime;
         private double _velocity;
+        private double _preferredDistance;
 
         private Rocket _rocket;
 
         public RocketFlight(Rocket rocket)
         {
             _rocket = rocket;
+        }
+
+        public RocketFlight()
+        {
         }
 
         public Rocket Rocket
@@ -37,6 +42,12 @@ namespace Rocket_flight_planner.Models
         {
             get { return _velocity; }
             set { _velocity = value; OnPropertyChanged("Velocity"); }
+        }
+
+        public double PreferredDistance
+        {
+            get { return _preferredDistance; }
+            set { _preferredDistance = value; OnPropertyChanged("PreferredDistance"); }
         }
     }
 }

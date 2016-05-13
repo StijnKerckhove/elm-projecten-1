@@ -50,5 +50,10 @@ namespace Rocket_flight_planner.ViewModels
         {
             LaunchPadModel.Rocket.Mass += 100;
         }
+
+        public void CalculateFlight()
+        {
+            
+        }
     }
 }

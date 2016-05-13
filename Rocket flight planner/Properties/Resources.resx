@@ -117,15 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Calculate" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="Centimeter" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="CompressorSpecs" xml:space="preserve">
+    <value>Distance</value>
+    <comment>tbCompressorSpecs</comment>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distance</value>
+    <comment>distance to fly</comment>
+  </data>
+  <data name="Gram" xml:space="preserve">
+    <value>gram</value>
+  </data>
   <data name="Language" xml:space="preserve">
     <value>English</value>
+  </data>
+  <data name="LaunchAngle" xml:space="preserve">
+    <value>Launch angle:</value>
+  </data>
+  <data name="LaunchHeight" xml:space="preserve">
+    <value>Launch height:</value>
+  </data>
+  <data name="LaunchPadSpecs" xml:space="preserve">
+    <value>Launch pad</value>
+    <comment>tbLaunchPadSpecs</comment>
+  </data>
+  <data name="LaunchTubeDiameter" xml:space="preserve">
+    <value>Launch tube diameter:</value>
   </data>
   <data name="MainwindowTitle" xml:space="preserve">
     <value>Rocket flight planner</value>
     <comment>Title of the main window</comment>
   </data>
+  <data name="Mass" xml:space="preserve">
+    <value>Mass:</value>
+    <comment>lblMass</comment>
+  </data>
+  <data name="Meters" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="PreferredDistance" xml:space="preserve">
+    <value>Preferred distance:</value>
+  </data>
   <data name="RocketSpecs" xml:space="preserve">
-    <value>Rocket specifications</value>
-    <comment>Label RocketSpecs</comment>
+    <value>Rocket</value>
+    <comment>tbRocketSpecs</comment>
   </data>
 </root>
