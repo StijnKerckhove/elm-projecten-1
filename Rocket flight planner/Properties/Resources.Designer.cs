@@ -70,6 +70,17 @@ namespace Rocket_flight_planner.Properties
         }
 
         /// <summary>
+        ///   Looks up a localized string similar to bar.
+        /// </summary>
+        public static string bar
+        {
+            get
+            {
+                return ResourceManager.GetString("bar", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to Calculate.
         /// </summary>
         public static string Calculate
@@ -202,6 +213,17 @@ namespace Rocket_flight_planner.Properties
         }
 
         /// <summary>
+        ///   Looks up a localized string similar to Maximum height:.
+        /// </summary>
+        public static string MaxHeight
+        {
+            get
+            {
+                return ResourceManager.GetString("MaxHeight", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to m.
         /// </summary>
         public static string Meters
@@ -209,6 +231,17 @@ namespace Rocket_flight_planner.Properties
             get
             {
                 return ResourceManager.GetString("Meters", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to m/s.
+        /// </summary>
+        public static string ms
+        {
+            get
+            {
+                return ResourceManager.GetString("ms", resourceCulture);
             }
         }
 
@@ -224,6 +257,28 @@ namespace Rocket_flight_planner.Properties
         }
 
         /// <summary>
+        ///   Looks up a localized string similar to Pressure:.
+        /// </summary>
+        public static string Pressure
+        {
+            get
+            {
+                return ResourceManager.GetString("Pressure", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Results.
+        /// </summary>
+        public static string Results
+        {
+            get
+            {
+                return ResourceManager.GetString("Results", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to Rocket.
         /// </summary>
         public static string RocketSpecs
@@ -231,6 +286,17 @@ namespace Rocket_flight_planner.Properties
             get
             {
                 return ResourceManager.GetString("RocketSpecs", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Velocity:.
+        /// </summary>
+        public static string Velocity
+        {
+            get
+            {
+                return ResourceManager.GetString("Velocity", resourceCulture);
             }
         }
     }

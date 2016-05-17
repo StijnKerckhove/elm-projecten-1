@@ -8,6 +8,7 @@ namespace Rocket_flight_planner.Models
         private double _liftOffTime;
         private double _velocity;
         private double _preferredDistance;
+        private double _maxHeight;
 
         private Rocket _rocket;
 
@@ -48,6 +49,12 @@ namespace Rocket_flight_planner.Models
         {
             get { return _preferredDistance; }
             set { _preferredDistance = value; OnPropertyChanged("PreferredDistance"); }
+        }
+
+        public double MaxHeight
+        {
+            get { return _maxHeight; }
+            set { _maxHeight = value; OnPropertyChanged("MaxHeight"); }
         }
     }
 }

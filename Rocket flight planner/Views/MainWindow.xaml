@@ -8,7 +8,7 @@
     xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
     x:Class="Rocket_flight_planner.Views.MainWindow"
         mc:Ignorable="d"
-        Title="{x:Static p:Resources.MainwindowTitle}" Height="800" Width="1013" Icon="../Images/Logo-groep_5.ico">
+        Title="{x:Static p:Resources.MainwindowTitle}" Height="599" Width="846.5" Icon="../Images/Logo-groep_5.ico" MaxWidth="846.5" MaxHeight="599">
     <Window.Resources>
         <l:CaseConverter x:Key="Converter" />
         <Style x:Key="FocusVisual">
@@ -287,9 +287,10 @@
         </Style>
     </Window.Resources>
 
-    <Grid Background="#FF2F2C38">
+    <Grid Background="#FF2F2C38" Height="572" VerticalAlignment="Top">
         <Grid.RowDefinitions>
             <RowDefinition Height="86"/>
+            <RowDefinition Height="479"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
@@ -300,22 +301,18 @@
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
-
-        <Label x:Name="Label" Content="{x:Static p:Resources.Language}" HorizontalAlignment="Right" Margin="0,60,4,0" VerticalAlignment="Top" Grid.Column="3" Height="26" Width="48"/>
         <TextBlock Grid.Column="1" x:Name="TextBlock" HorizontalAlignment="Left" Margin="0,15,0,0" TextWrapping="Wrap" Text="{Binding Converter={StaticResource Converter}, Source={x:Static p:Resources.MainwindowTitle}}" VerticalAlignment="Top" FontSize="36" Grid.ColumnSpan="2" Width="458" Foreground="#FFF2FFFE" Height="48" FontFamily="Segoe UI Semilight"/>
-        <TextBox x:Name="TextBox" Grid.Column="4" HorizontalAlignment="Left" Height="24" Margin="36,44,-155,0" TextWrapping="Wrap" Text="{Binding LaunchPadModel.Rocket.Mass, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
-        <Button x:Name="Button" Content="Test" Command="{Binding Test}" Grid.Column="4" HorizontalAlignment="Left" Margin="84,72,-157,0" VerticalAlignment="Top" Width="74" Grid.Row="1" Height="20"/>
 
         <Grid HorizontalAlignment="Left" Height="223" VerticalAlignment="Top" Width="250" Background="#FFE63A3A" Grid.Column="1" Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
 
             <TextBlock x:Name="RocketSpecs" Text="{Binding Converter={StaticResource Converter}, Source={x:Static p:Resources.RocketSpecs}}" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFF2FFFE" FontSize="20" Width="240" Height="30" FontFamily="Segoe UI Semilight" Margin="10,10,0,0" />
-            <Label x:Name="LblMass" Content="{x:Static p:Resources.Mass}" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFF2FFFE" FontSize="16" Margin="20,20,174,0" Grid.Row="1" FontFamily="Segoe UI Semilight" Padding="0" Width="56"/>
-            <TextBox x:Name="TxtMass" Text="{Binding LaunchPadModel.Rocket.Mass}"  Height="28" TextWrapping="Wrap" VerticalAlignment="Center" Width="172" Background="#FFF2FFFE" ToolTip="Test" HorizontalAlignment="Center" TextAlignment="Right" FontSize="14" MaxLength="4" Padding="3,3,5,3" Margin="20,47,58,92" Grid.Row="1" BorderBrush="#FFAC2727"/>
-            <Label x:Name="LblGram" Content="{x:Static p:Resources.Gram}" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFF2FFFE" FontSize="14" Margin="192,45,0,0" Grid.Row="1" Height="30"/>
+            <Label x:Name="LblMass" Content="{x:Static p:Resources.Mass}" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFF2FFFE" FontSize="16" Margin="26,24,168,0" Grid.Row="1" FontFamily="Segoe UI Semilight" Padding="0" Width="56"/>
+            <TextBox x:Name="TxtMass" Text="{Binding LaunchPadModel.Rocket.Mass}"  Height="28" TextWrapping="Wrap" VerticalAlignment="Center" Width="172" Background="#FFF2FFFE" ToolTip="Test" HorizontalAlignment="Center" TextAlignment="Right" FontSize="14" MaxLength="4" Padding="3,3,5,3" Margin="26,51,52,104" Grid.Row="1" BorderBrush="#FFAC2727"/>
+            <Label x:Name="LblGram" Content="{x:Static p:Resources.Gram}" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFF2FFFE" FontSize="14" Margin="198,49,0,0" Grid.Row="1" Height="30"/>
         </Grid>
 
         <Grid HorizontalAlignment="Left" Height="223" VerticalAlignment="Top" Background="#FF4DA03B" Grid.Column="2" Grid.Row="1" Margin="20,0,0,0">
@@ -329,13 +326,9 @@
             <Label x:Name="LblCm" Content="{x:Static p:Resources.Centimeter}" VerticalAlignment="Center" FontSize="16" Margin="192,45,15,91" Foreground="#FFF2FFFE" Padding="5,0,0,0" Height="30" FontFamily="Segoe UI Semilight" FontWeight="Bold" VerticalContentAlignment="Center" Grid.Row="1"/>
             <Label x:Name="LblLaunchAngle" Content="{x:Static p:Resources.LaunchAngle}" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFF2FFFE" FontSize="16" Margin="20,90,0,0" FontFamily="Segoe UI Semilight" Padding="0" Grid.Row="1"/>
             <Label x:Name="LblCm2" Content="{x:Static p:Resources.Centimeter}" VerticalAlignment="Center" FontSize="16" Margin="192,116,15,21" Foreground="#FFF2FFFE" Padding="5,0,0,0" Height="30" FontFamily="Segoe UI Semilight" FontWeight="Bold" VerticalContentAlignment="Center" Grid.Row="1"/>
-            <ComboBox x:Name="CbLaunchHeight" HorizontalAlignment="Left" Margin="20,116,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" Height="29" BorderBrush="#FF0E6C04" Background="Red" Foreground="Black" Style="{DynamicResource ComboBoxStyleGreenTile}" HorizontalContentAlignment="Right" FontSize="14">
-                <ComboBoxItem Content="30"/>
-                <ComboBoxItem Content="45"/>
-                <ComboBoxItem Content="60"/>
-                <ComboBoxItem Content="75"/>
-                <ComboBoxItem Content="90"/>
+            <ComboBox x:Name="CbLaunchHeight" ItemsSource="{Binding LaunchPadModel.PossibleAngles}" SelectedItem="{Binding LaunchPadModel.LaunchAngle}" IsSynchronizedWithCurrentItem="True" HorizontalAlignment="Left" Margin="20,116,0,0" Grid.Row="1" VerticalAlignment="Top" Width="172" Height="29" BorderBrush="#FF0E6C04" Background="Red" Foreground="Black" Style="{DynamicResource ComboBoxStyleGreenTile}" HorizontalContentAlignment="Right" FontSize="14">
             </ComboBox>
+            <Label x:Name="LblLaunchAngle_Copy" Content="{x:Static p:Resources.LaunchAngle}" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFF2FFFE" FontSize="16" Margin="20,90,0,0" FontFamily="Segoe UI Semilight" Padding="0" Grid.Row="1"/>
         </Grid>
 
         <Grid HorizontalAlignment="Left" Height="169" Margin="20,0,0,0" VerticalAlignment="Top" Width="250" Background="#FF3F8FA6" Grid.Column="3" Grid.Row="1">
@@ -348,9 +341,20 @@
             <TextBox x:Name="TxtPreferredDistance" TextWrapping="Wrap" Text="{Binding LaunchPadModel.RocketFlight.PreferredDistance}" VerticalAlignment="Bottom" Width="172" Background="#FFF2FFFE" ToolTip="Test" HorizontalAlignment="Right" Margin="0,0,58,45" Height="29" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" FontSize="14" Padding="0,0,5,0" Grid.Row="1" BorderBrush="#FF495D9B"/>
             <Label x:Name="LblCm2_Copy" Content="{x:Static p:Resources.Meters}" VerticalAlignment="Center" FontSize="16" Margin="192,48,15,45" Foreground="#FFF2FFFE" Padding="5,0,0,0" Height="30" FontFamily="Segoe UI Semilight" FontWeight="Bold" VerticalContentAlignment="Center" Grid.Row="1"/>
         </Grid>
-        <Button x:Name="button" Content="{x:Static p:Resources.Calculate}" Grid.Column="3" HorizontalAlignment="Left" Margin="120,188,0,0" Grid.Row="1" VerticalAlignment="Top" Width="150" Height="35" FontSize="16"/>
-        <Grid Margin="19,252,0,253" Grid.Row="1" Grid.ColumnSpan="4" Background="#FFD3C04B">
+        <Button x:Name="button" Command="{Binding Calculate}" Content="{x:Static p:Resources.Calculate}" Grid.Column="3" HorizontalAlignment="Left" Margin="120,188,0,0" Grid.Row="1" VerticalAlignment="Top" Width="150" Height="35" FontSize="16"/>
+
+        <Grid Margin="19,252,0,49" Grid.Row="1" Grid.ColumnSpan="4" Background="#FFE29E28">
             <WrapPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+            <TextBlock x:Name="LblResults" Text="{Binding Converter={StaticResource Converter}, Source={x:Static p:Resources.Results}}" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFF2FFFE" FontSize="20" FontFamily="Segoe UI Semilight"></TextBlock>
+            <Label x:Name="LblPressure" Content="{x:Static p:Resources.Pressure}" HorizontalAlignment="Left" Margin="42,64,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FFF2FFFE"/>
+            <TextBox x:Name="TxtLaunchPressure" HorizontalAlignment="Left" Height="28" Margin="42,94,0,0" TextWrapping="Wrap" Text="{Binding LaunchPadModel.CompressorTank.LaunchPressure}" VerticalAlignment="Top" Width="172" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="0,0,5,0" FontSize="14"/>
+            <Label x:Name="LblMaxHeight" Content="{x:Static p:Resources.MaxHeight}" HorizontalAlignment="Left" Margin="300,64,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FFF2FFFE"/>
+            <TextBox x:Name="TxtMaxHeight" HorizontalAlignment="Left" Height="28" Margin="300,94,0,0" TextWrapping="Wrap" Text="{Binding LaunchPadModel.RocketFlight.MaxHeight}" VerticalAlignment="Top" Width="172" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="0,0,5,0" FontSize="14"/>
+            <Label x:Name="LblVelocity" Content="{x:Static p:Resources.Velocity}" HorizontalAlignment="Left" Margin="552,64,0,0" VerticalAlignment="Top" FontSize="16" FontFamily="Segoe UI Semilight" Foreground="#FFF2FFFE"/>
+            <TextBox x:Name="TxtVelocity" HorizontalAlignment="Left" Height="28" Margin="552,94,0,0" TextWrapping="Wrap" Text="{Binding LaunchPadModel.RocketFlight.Velocity}" VerticalAlignment="Top" Width="172" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="0,0,5,0" FontSize="14"/>
+            <Label x:Name="LblMs" Content="{x:Static p:Resources.ms}" HorizontalAlignment="Left" Margin="724,94,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF2FFFE" RenderTransformOrigin="-0.273,0.552"/>
+            <Label x:Name="LblBar" Content="{x:Static p:Resources.bar}" HorizontalAlignment="Left" Margin="214,93,0,0" VerticalAlignment="Top" FontSize="14" Foreground="#FFF2FFFE" RenderTransformOrigin="-0.273,0.552"/>
+
         </Grid>
     </Grid>
 </Window>

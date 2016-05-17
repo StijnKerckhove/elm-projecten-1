@@ -1,4 +1,5 @@
-﻿using Rocket_flight_planner.Interfaces;
+﻿using System;
+using Rocket_flight_planner.Interfaces;
 
 namespace Rocket_flight_planner.Models
 {
@@ -6,10 +7,10 @@ namespace Rocket_flight_planner.Models
     {
         private int _launchPressure;
 
-        public int LaunchPressure
+        public double LaunchPressure
         {
-            get { return _launchPressure; }
-            set { _launchPressure = value; OnPropertyChanged("LaunchPressure"); }
+            get { return Math.Round(_launchPressure * Math.Pow(10, -5), 2); }
+            set { _launchPressure = (int)value; OnPropertyChanged("LaunchPressure"); }
         }
     }
 }

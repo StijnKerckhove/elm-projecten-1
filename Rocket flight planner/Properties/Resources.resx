@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bar" xml:space="preserve">
+    <value>bar</value>
+  </data>
   <data name="Calculate" xml:space="preserve">
     <value>Calculate</value>
   </data>
@@ -158,14 +161,29 @@
     <value>Mass:</value>
     <comment>lblMass</comment>
   </data>
+  <data name="MaxHeight" xml:space="preserve">
+    <value>Maximum height:</value>
+  </data>
   <data name="Meters" xml:space="preserve">
     <value>m</value>
+  </data>
+  <data name="ms" xml:space="preserve">
+    <value>m/s</value>
   </data>
   <data name="PreferredDistance" xml:space="preserve">
     <value>Preferred distance:</value>
   </data>
+  <data name="Pressure" xml:space="preserve">
+    <value>Pressure:</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>Results</value>
+  </data>
   <data name="RocketSpecs" xml:space="preserve">
     <value>Rocket</value>
     <comment>tbRocketSpecs</comment>
+  </data>
+  <data name="Velocity" xml:space="preserve">
+    <value>Velocity:</value>
   </data>
 </root>

@@ -117,16 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CompressorSpecs" xml:space="preserve">
-    <value>CompressorSpecs</value>
+  <data name="bar" xml:space="preserve">
+    <value>bar</value>
+  </data>
+  <data name="Calculate" xml:space="preserve">
+    <value>Bereken</value>
+  </data>
+  <data name="Centimeter" xml:space="preserve">
+    <value>cm</value>
+  </data>
+  <data name="CompressorSpecs1" xml:space="preserve">
+    <value>Afstand</value>
     <comment>tbCompressorSpecs</comment>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Afstand</value>
+    <comment>distance to fly</comment>
+  </data>
+  <data name="Gram" xml:space="preserve">
+    <value>gram</value>
   </data>
   <data name="Language" xml:space="preserve">
     <value>Nederlands</value>
   </data>
+  <data name="LaunchAngle" xml:space="preserve">
+    <value>Lanceerhoek:</value>
+  </data>
+  <data name="LaunchHeight" xml:space="preserve">
+    <value>Lanceerhoogte:</value>
+  </data>
   <data name="LaunchPadSpecs" xml:space="preserve">
-    <value>Launch pad specifications</value>
+    <value>Lanceerplatform</value>
     <comment>tbLaunchPadSpecs</comment>
+  </data>
+  <data name="LaunchTubeDiameter" xml:space="preserve">
+    <value>Diameter lanceerbuis:</value>
   </data>
   <data name="MainwindowTitle" xml:space="preserve">
     <value>Rocket flight planner</value>
@@ -136,8 +161,29 @@
     <value>Massa</value>
     <comment>lblMass</comment>
   </data>
+  <data name="MaxHeight" xml:space="preserve">
+    <value>Maximale hoogte:</value>
+  </data>
+  <data name="Meters" xml:space="preserve">
+    <value>m</value>
+  </data>
+  <data name="ms" xml:space="preserve">
+    <value>m/s</value>
+  </data>
+  <data name="PreferredDistance" xml:space="preserve">
+    <value>Geweste afstand:</value>
+  </data>
+  <data name="Pressure" xml:space="preserve">
+    <value>Druk:</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>Resultaten</value>
+  </data>
   <data name="RocketSpecs" xml:space="preserve">
-    <value>Raket specificaties</value>
+    <value>Specificaties raket</value>
     <comment>Label RocketSpecs</comment>
+  </data>
+  <data name="Velocity" xml:space="preserve">
+    <value>Snelheid:</value>
   </data>
 </root>

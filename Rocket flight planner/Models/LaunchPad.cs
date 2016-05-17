@@ -1,13 +1,16 @@
-﻿using Rocket_flight_planner.Interfaces;
+﻿using System.Collections.Generic;
+using System.Windows.Documents;
+using Rocket_flight_planner.Interfaces;
 
 namespace Rocket_flight_planner.Models
 {
 
     public class LaunchPad : ObservableObject
     {
-        private int _launchTubeDiameter;
+        private double _launchTubeDiameter;
         private int _launchAngle;
         private int _launchHeight;
+        private int _launchTubeLength;
 
         private Rocket _rocket;
         private RocketFlight _rocketFlight;
@@ -15,13 +18,20 @@ namespace Rocket_flight_planner.Models
 
         public LaunchPad()
         {
-            _compressorTank = new CompressorTank {LaunchPressure = 6};
-            _rocket = new Rocket { Mass = 100 };
+            _compressorTank = new CompressorTank();
+            _rocket = new Rocket { Mass = 150 };
             _rocketFlight = new RocketFlight { Rocket = _rocket, PreferredDistance = 8};
-            _launchHeight = 20;
+            _launchHeight = 10;
+            _launchTubeLength = 230;
+            _launchAngle = 45;
+            PossibleAngles = new List<int> {30,45,60};
+            _launchTubeDiameter = 26.9;
         }
 
-        public int LaunchTubeDiameter
+        public IEnumerable<int> PossibleAngles { get; set; }
+
+
+        public double LaunchTubeDiameter
         {
             get { return _launchTubeDiameter; }
             set { _launchTubeDiameter = value; OnPropertyChanged("LaunchTubeDiameter"); }
@@ -29,8 +39,8 @@ namespace Rocket_flight_planner.Models
 
         public int LaunchTubeLength
         {
-            get { return _launchAngle; }
-            set { _launchAngle = value; OnPropertyChanged("LaunchTubeLength"); }
+            get { return _launchTubeLength; }
+            set { _launchTubeLength = value; OnPropertyChanged("LaunchTubeLength"); }
         }
 
         public int LaunchAngle

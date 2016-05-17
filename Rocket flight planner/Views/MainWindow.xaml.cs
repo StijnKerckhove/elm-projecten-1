@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Globalization;
 using System.Threading;
+using System.Windows;
 using System.Windows.Documents;
 using Rocket_flight_planner.Models;
 using Rocket_flight_planner.ViewModels;
@@ -15,10 +16,10 @@ namespace Rocket_flight_planner.Views
         public MainWindow()
         {
             // Overwrite system locale
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
+            //Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("en-US");
             InitializeComponent();
 
-            var viewModel = new LaunchPadViewModel {LaunchPadModel = new LaunchPad {LaunchTubeDiameter = 20}};
+            var viewModel = new LaunchPadViewModel {LaunchPadModel = new LaunchPad()};
 
             DataContext = viewModel;
         }
